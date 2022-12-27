@@ -1,0 +1,227 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(0, 0, 68, 0.789);
+    color: white;
+}
+
+.see_more {
+    padding: 0.5em 1em;
+    border: none;
+    color: white;
+    outline: none;
+    background: rgba(0, 0, 68, 0.789);
+    border-radius: 0.2em;
+}
+
+/* modal starts here */
+
+.dmodal {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    overflow: auto;
+    display: none;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 60;
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* modal ends here */
+.section {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.section>.title {
+    font-size: 1.6em;
+    margin-bottom: 0.9em;
+}
+
+.section>p {
+    font-size: 1em;
+}
+
+.section>p>span {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.err {
+    font-size: 1em;
+    text-align: center;
+    border-radius: 0.5em;
+    font-weight: bolder;
+    padding: 0.5em;
+    width: 50%;
+    margin: auto;
+}
+
+.danger {
+    color: red;
+    background: rgba(252, 0, 73, 0.266);
+}
+
+.sucess {
+    color: green;
+    background-color: rgba(0, 225, 0, 0.266);
+}
+
+.jobWrapper {
+    width: 90%;
+    margin: 3em auto 3em;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, 100%);
+    place-content: center;
+    justify-content: space-between;
+}
+.locationWrapper {
+    width: 90%;
+    margin: 3em auto 3em;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, 100%);
+    place-content: center;
+    justify-content: space-between;
+}
+
+.job {
+    border-radius: 1em;
+    width: 100%;
+    padding: 2em;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),
+        -2px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.locate {
+    border-radius: 1em;
+    width: 100%;
+    padding: 2em;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),
+        -2px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job>.location {
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: rgba(0, 0, 68, 0.789);
+    text-transform: capitalize;
+}
+
+.job>.profession>i {
+    color: rgba(0, 0, 68, 0.789);
+}
+
+.job>.profession>span {
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-left: 0.5em;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.details>p {
+    color: rgba(0, 0, 0, 0.489);
+    font-weight: bold;
+}
+
+.details>.detail {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: rgba(0, 0, 68, 0.999);
+}
+
+.details>.detail>span {
+    font-weight: lighter;
+    font-size: 1.1em;
+    color: black;
+}
+
+.job>button {
+    font-size: 1em;
+    padding: 0.7em 1em;
+    margin-top: 1em;
+    background-color:rgba(255, 0, 0, 0.513);
+    color: rgba(251, 0, 0, 1);
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.detail>i,
+.location>i {
+    margin-right: 0.4em
+}
+
+.total{
+    margin-left: 2em;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-content {
+        width: 50%;
+    }
+
+    .jobWrapper {
+        grid-template-columns: repeat(auto-fill, 46%);
+    }
+    .locationWrapper {
+        grid-template-columns: repeat(auto-fill, 20%);
+    }
+}

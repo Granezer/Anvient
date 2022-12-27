@@ -1,0 +1,549 @@
+body{
+    /* background-image: url('images/girlone.png'); */
+    background: url("../images/oldman.jpg");
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body{
+    background: url("../images/rogi.jpg");
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    }
+  }
+  .ili{
+    color: black;
+    text-decoration: none;
+  }
+/* Navbar start */
+/* Modify the background color */
+.navbar-custom {
+  width: 100%;
+  background-color: #1e384b;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-text {
+  color: white;
+}
+.nav-link{
+    font-weight: bolder;
+    color: white;
+}
+.navbar .megamenu{ padding: 1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+/* dropdown search bar par */
+.ui{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .ui {
+      margin-top: 70px;
+      /* background-color: red; */
+    }
+    .rr{
+        margin-top: 30px;
+        border-radius: 30px;
+    }
+  }
+  .rr{
+    border-radius: 20px;
+    padding: 0.5em 1em;
+   font-size: 1.1em;
+  }
+.yy{
+    margin: 5px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 4px 8px #585858);
+}
+.oo{
+    margin: 0 auto;
+}
+/* text white */
+.tex{
+  color: white;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+    /* text-shadow: 2px 2px rgb(156, 155, 155); */
+}
+.io{
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .tex {
+      color: white;
+      padding: 0.1em;
+      font-size: larger;
+    }
+.io{
+    color: rgb(238, 185, 10);
+    margin-top: 40px;
+    font-size: x-large;
+    color: black;
+}
+}  
+/* Featured location scrollbar */
+/* .ii{
+    background-color: transparent;
+    width: 80%;
+    height: 200px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: *
+    .ii{
+        background-color: transparent;
+        width: 100%;
+        height: 200px;
+    }
+    .tt{
+        padding: 40px;
+    }
+}
+#loc{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 0 auto;
+}
+.ji{
+    margin-top: 50px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: *
+    .ji{
+        margin-top: auto;
+    }
+} */
+/* .scroller {
+    width: 60%;
+    height: auto;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+  } */
+  .col{
+    margin: 5px;
+  }
+  .grid-container > div {
+    background-color: transparent;
+    border-radius: 15px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid rgb(255, 255, 255);
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .scroller {
+        width: 60%;
+        height: auto;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+      }
+      .grid-container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color: transparent;
+        padding: 10px;
+      }
+      .grid-container > div{
+        margin-top: 20px;
+      }
+      #loc{
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+}  
+.po{
+    width: fit-content;
+    /* height: fit-content;
+    margin: 150px auto 0;
+    padding: 10px; */
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 2px auto 0;
+}
+.tea{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 80px;
+    /* text-shadow: 2px 2px gray; */
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .tea {
+      color: white;
+      padding: 0.1em;
+      font-size: larger;
+    }
+}  .po{
+    width: fit-content;
+    /* height: fit-content;
+    margin: 150px auto 0;
+    padding: 10px; */
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 2px auto 0;
+}
+.son{
+  margin-top: 160px;
+}
+.qa{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+/* Div for write up start*/
+.trf{
+  width: 800px;
+}
+.dew{
+  background-color: white;
+  margin-top: -10px;
+}
+.lki{
+  height: 700px;
+}
+/* Div for write up end */
+@media only screen and (max-width: 768px) {
+    #qa{
+        width: 100%;
+        height: auto;
+    }
+    .lki{
+      height: max-content;
+    }
+}
+/* Skilled Services div */
+/* .ss{
+  margin: 2px;
+} */
+.ki{
+  /* width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: scale-down;
+  filter: drop-shadow(2px 4px 8px #585858); */
+  /* object-fit: cover; */
+  max-width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid rgb(255, 255, 255);
+}
+@media only screen and (max-width: 768px) {
+  .ki{
+    margin: 5px;
+      width: 450px;
+      padding: 10px;
+      object-fit: scale-down;
+      border: 2px solid rgb(255, 255, 255);
+  }
+}
+.txt{
+  margin-top: 10px;
+  text-align: center;
+}
+.my-5{
+  color: white;
+}
+/* custom box starts */
+.rt{
+  margin: 30px;
+  width: 200px;
+}
+/* custom box end */
+
+.clientWrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.clientWrapper > .image{
+  background-color: green;
+  width: 50%;
+}
+
+.clientWrapper > .image > img{
+  width: 100%;
+  height: 100vh;
+}
+
+.clientWrapper > .content{
+  width: 50%;
+  background-color: white;
+  height: 100vh;
+  color: black;
+}
+
+.banner1 {
+  width: 100%;
+  /* margin: 2em auto; */
+  border-radius: 0.5em;
+  display: flex;
+  color: white;
+  border-top: 3px solid rgba(255, 255, 255, 0.56);
+}
+
+.banner1>.image {
+  width: 50%;
+  height: 100vh;
+}
+
+.banner1>.image>img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+.banner1>.content {
+  background-color: rgba(0, 0, 0, 0.856);
+  width: 50%;
+  padding: 2em 1em;
+}
+
+.banner1>.content>h2 {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  word-spacing: 0.5em;
+  letter-spacing: 0.1em;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0.5em;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.banner1>.content>div {
+  font-size: 1.1em;
+  margin: 1em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+  word-spacing: 0.3em;
+  letter-spacing: 0.01em;
+}
+
+.clientTalk{
+  margin-top: 1em;
+}
+
+.clientTalk > li > i{
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: yellow;
+}
+
+.clientTalk  > li{
+  font-size: 1.2em;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  margin: 1em 0;
+}
+
+@media (max-width: 768px) {
+  .banner1 {
+    width: 100%;
+    flex-direction: column;
+}
+
+.banner1>.image {
+    /* width: 100%; */
+    display: none;
+}
+
+.banner1>.content {
+    width: 100%;
+}
+
+.banner1>.content>h2 {
+    text-align: center;
+}
+}
+
+/* modal starts here */
+.modals {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 50;
+  /* Sit on top */
+  padding-top: 5px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+  color: red;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.header {
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.489);
+}
+
+.header>p>span {
+  color: black;
+  font-weight: bolder;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form>.item {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.989);
+  text-align: left;
+}
+
+.input {
+  /* background-color: red; */
+  font-size: 1em;
+  padding: 0.7em;
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 68, 0.5);
+  border-radius: 0.3em;
+}
+
+.submit {
+  /* display: flex;
+  justify-self: center;
+  align-content: center; */
+  margin: 1em auto;
+  background: rgba(0, 0, 68, 0.999);
+  color: white;
+  font-size: 1.2em;
+  width: 40%;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+  border-radius: 0.5em;
+
+}
+
+.important {
+  color: rgba(174, 0, 0, 0.897);
+  font-weight: bolder;
+}
+@media screen and (min-width: 768px) {
+
+  .modal-content {
+      width: 60%;
+  }
+
+  .multi_item {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .itemContent {
+      width: 40%;
+      gap: 0.5;
+  }
+}
+
+.err {
+  font-size: 1em;
+  text-align: center;
+  border-radius: 0.5em;
+  font-weight: bolder;
+  padding: 0.5em;
+  width: 50%;
+  margin: auto;
+}
+
+.danger {
+  color: red;
+  background: rgba(252, 0, 73, 0.266);
+}
+
+.sucess {
+  color: green;
+  background-color: rgba(0, 225, 0, 0.266);
+}

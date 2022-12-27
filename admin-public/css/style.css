@@ -1,0 +1,249 @@
+body{
+    /* background-image: url('images/girlone.png'); */
+    background: url("../images/mobweb1.jpg");
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body{
+    background: url("../images/mob1.jpg");
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    }
+  }
+  .ili{
+    color: black;
+    text-decoration: none;
+  }
+/* Navbar start */
+.nav-link{
+    font-weight: bolder;
+}
+.navbar .megamenu{ padding: 1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+/* dropdown search bar par */
+.ui{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .ui {
+      margin-top: 70px;
+      /* background-color: red; */
+    }
+    .rr{
+        margin-top: 30px;
+        border-radius: 30px;
+    }
+  }
+  .rr{
+    border-radius: 20px;
+    padding: 0.5em 1em;
+   font-size: 1.1em;
+  }
+.yy{
+    margin: 5px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 4px 8px #585858);
+}
+.oo{
+    margin: 0 auto;
+}
+/* text white */
+.tex{
+    width: 80%;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    /* text-shadow: 2px 2px rgb(156, 155, 155); */
+}
+.io{
+    margin-top: 150px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: roboto;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .tex {
+      color: white;
+      padding: 0.1em;
+      font-size: larger;
+    }
+.io{
+    color: rgb(238, 185, 10);
+    margin-top: 40px;
+    font-size: x-large;
+    color: black;
+}
+}  
+/* Featured location scrollbar */
+.ii{
+    background-color: transparent;
+    width: 80%;
+    height: 200px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .ii{
+        background-color: transparent;
+        width: 100%;
+        height: 200px;
+    }
+    .tt{
+        padding: 40px;
+    }
+}
+#loc{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 0 auto;
+}
+.ji{
+    margin-top: 50px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .ji{
+        margin-top: auto;
+    }
+}
+/* .scroller {
+    width: 60%;
+    height: auto;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+  } */
+  .col{
+    margin: 5px;
+  }
+  .grid-container > div {
+    background-color: transparent;
+    border-radius: 15px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid rgb(255, 255, 255);
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .scroller {
+        width: 60%;
+        height: auto;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+      }
+      .grid-container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color: transparent;
+        padding: 10px;
+      }
+      .grid-container > div{
+        margin-top: 20px;
+      }
+      #loc{
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+}  
+.po{
+    width: fit-content;
+    /* height: fit-content;
+    margin: 150px auto 0;
+    padding: 10px; */
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 50px auto 0;
+}
+.tea{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 80px;
+    font-family: roboto;
+    /* text-shadow: 2px 2px gray; */
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .tea {
+      color: white;
+      padding: 0.1em;
+      font-size: larger;
+    }
+}  
+.qa{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 768px) {
+    #qa{
+        width: 100%;
+        height: auto;
+    }
+}
+/* Skilled Services div */
+/* .ss{
+  margin: 2px;
+} */
+.ki{
+  /* width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: scale-down;
+  filter: drop-shadow(2px 4px 8px #585858); */
+  /* object-fit: cover; */
+  max-width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid rgb(255, 255, 255);
+}
+@media only screen and (max-width: 768px) {
+  .ki{
+    margin: 5px;
+      width: 450px;
+      padding: 10px;
+      object-fit: scale-down;
+      border: 2px solid rgb(255, 255, 255);
+  }
+}
+.txt{
+  margin-top: 10px;
+  text-align: center;
+}

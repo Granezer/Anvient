@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.count {
+    margin: 3em 5em;
+    color: rgba(0, 0, 0, 0.789);
+    font-size: 1em;
+}
+
+.jobWrapper {
+    width: 80%;
+    margin: 3em auto 3em;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, 100%);
+    place-content: center;
+    justify-content: space-between;
+}
+
+.job {
+    border-radius: 1em;
+    width: 100%;
+    padding: 3em;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),
+        -2px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job>.location {
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: rgba(0, 0, 68, 0.789);
+    text-transform: capitalize;
+}
+
+.job>.profession>i {
+    color: rgba(0, 0, 68, 0.789);
+}
+
+.job>.profession>span {
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-left: 0.5em;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.details>p {
+    color: rgba(0, 0, 0, 0.489);
+    font-weight: bold;
+}
+
+.details>.detail {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: rgba(0, 0, 68, 0.999);
+}
+
+.details>.detail>span {
+    font-weight: lighter;
+    font-size: 1.1em;
+    color: black;
+}
+
+.job>button {
+    font-size: 1em;
+    padding: 0.7em 1em;
+    margin-top: 1em;
+    background-color: rgba(0, 0, 68, 0.789);
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.detail>i,
+.location>i {
+    margin-right: 0.4em
+}
+
+.error {
+    font-size: 1.5em;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(226, 189, 189, 0.333);
+    color: red
+}
+
+/* modal starts here */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 50;
+    /* Sit on top */
+    padding-top: 5px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* modal ends here */
+
+.header {
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.489);
+}
+
+.header>p>span {
+    color: black;
+    font-weight: bolder;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form>.item {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.989);
+}
+
+.input {
+    /* background-color: red; */
+    font-size: 1em;
+    padding: 0.7em;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0, 0, 68, 0.5);
+    border-radius: 0.3em;
+}
+
+.submit {
+    /* display: flex;
+    justify-self: center;
+    align-content: center; */
+    margin: 1em auto;
+    background: rgba(0, 0, 68, 0.999);
+    color: white;
+    font-size: 1.2em;
+    width: 40%;
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+
+}
+
+.important {
+    color: rgba(174, 0, 0, 0.897);
+    font-weight: bolder;
+}
+
+.multi_item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.multi_item>.itemContent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section {
+    font-size: 1.3em;
+    color: black;
+    font-weight: bolder;
+}
+
+.total{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    font-style: oblique;
+    margin-top: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+    .jobWrapper {
+        grid-template-columns: repeat(auto-fill, 46%);
+    }
+
+    .modal-content {
+        width: 60%;
+    }
+
+    .multi_item {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .itemContent {
+        width: 40%;
+        gap: 0.5;
+    }
+}

@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    color: white;
+    background-color: rgba(0, 0, 68, 0.999);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}

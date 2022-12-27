@@ -1,0 +1,23 @@
+.aa{
+    background-color: whitesmoke;
+}
+#saa{
+    width: 640px;
+    height: 510px;
+    object-fit: cover;
+}
+.ers{
+    height: 100px;
+}
+
+.d{
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #saa{
+        width: 100%;
+        object-fit: cover;
+    }
+
+  }
